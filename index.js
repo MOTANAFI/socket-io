@@ -22,6 +22,15 @@ io.on("connection", (client) => {
         console.log('user disconnected from the (Server)')
     })
 
+   client.on('new message', (msg)  => {
+    console.log(msg)
+   })
+
+
+    client.on('disconnect', () => {
+        console.log('user disconnected from the (Server)')
+    })
+
 
 })
 
